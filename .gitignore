@@ -1,0 +1,9 @@
+# Build Folders
+bin/
+obj/
+
+# Visual Studio
+.vs/
+.vscode/
+*.user
+*.suo

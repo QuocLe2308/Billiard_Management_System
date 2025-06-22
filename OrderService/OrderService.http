@@ -1,0 +1,6 @@
+@OrderService_HostAddress = http://172.16.6.46:5193
+
+GET {{OrderService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="content-language" content="vi">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>
+    QuangDz
+  </title>
+  <link rel="shortcut icon" href="/views/v1/images/logo.png">
+  <meta name="type" content="website">
+  <meta name="title" content="<?=$settings_title;?>">
+  <meta name="description"
+    content="Cửa hàng chuyên dầu nhớt cao cấp, sản phẩm phụ trợ và dưỡng sên. Uy tín, chất lượng TN-Clean& Oil">
+  <meta name="locale" content="vi_VN">
+  <meta name="image" content="/views/v1/images/graphic1.png">
+  <meta name="author" content="tncleanoil">
+  <meta name="robots" content="noindex" />
+  <meta name="keywords"
+    content="Cửa hàng chuyên dầu nhớt cao cấp, sản phẩm phụ trợ và dưỡng sên. Uy tín, chất lượng TN-Clean& Oil">
+  <meta property="og:url" content="https://tncleanoil.com">
+  <meta property="og:site_name"
+    content="Cửa hàng chuyên dầu nhớt cao cấp, sản phẩm phụ trợ và dưỡng sên. Uy tín, chất lượng TN-Clean& Oil" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="<?=$settings_title;?>">
+  <meta property="og:description"
+    content="Cửa hàng chuyên dầu nhớt cao cấp, sản phẩm phụ trợ và dưỡng sên. Uy tín, chất lượng TN-Clean& Oil">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:image" content="/views/v1/images/graphic1.png">
+  <link rel="stylesheet" href="/views/v1/assets/css/styles.css" type="text/css" />
+  <script src="/views/v1/assets/toastr/toastr.css"></script>
+  <script src="/views/v1/assets/libs/jquery/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script type="text/javascript">
+    const WEBSITE_URL = '<?=$settings_domain;?>', prefix = 'modun/';
+  </script>
+  <!-- Messenger Chat plugin Code -->
+  <div id="fb-root"></div>
+  <!-- Your Chat plugin code -->
+  <div id="fb-customer-chat" class="fb-customerchat"></div>
+  <!-- Messenger Plugin chat Code -->
+  <div id="fb-root"></div>
+  <!-- Your Plugin chat code -->
+  <div id="fb-customer-chat" class="fb-customerchat"></div>
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "105771791803291");
+    chatbox.setAttribute("attribution", "page_inbox");
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v11.0'
+      });
+    };
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
